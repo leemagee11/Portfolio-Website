@@ -9,7 +9,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+      className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors flex items-center space-x-2"
       aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
     >
       <motion.div
@@ -17,6 +17,7 @@ export default function ThemeToggle() {
         initial={{ opacity: 0, rotate: -180 }}
         animate={{ opacity: 1, rotate: 0 }}
         transition={{ duration: 0.3 }}
+        className="flex items-center"
       >
         {theme === 'light' ? (
           <svg
@@ -47,6 +48,9 @@ export default function ThemeToggle() {
             />
           </svg>
         )}
+        <span className="ml-2 text-sm font-medium text-gray-600 dark:text-gray-300">
+          {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
+        </span>
       </motion.div>
     </button>
   );
