@@ -14,14 +14,14 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="relative w-48 h-48 md:hidden mx-auto rounded-full overflow-hidden shadow-xl mb-8"
+            className="relative w-64 h-64 md:hidden mx-auto rounded-full overflow-hidden shadow-xl mb-8"
           >
             <Image
               src="/images/profile.jpg"
               alt="Lee Magee - Professional Profile"
               fill
               className="object-cover"
-              sizes="(max-width: 768px) 192px, 50vw"
+              sizes="(max-width: 768px) 256px, 50vw"
               priority
             />
           </motion.div>
