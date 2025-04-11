@@ -58,7 +58,7 @@ export default function Contact() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white py-16 px-4">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-gray-900 dark:to-gray-800 py-16 px-4">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -66,8 +66,8 @@ export default function Contact() {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Get in Touch</h1>
-          <p className="text-lg text-slate-600">Have a question or want to work together?</p>
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Get in Touch</h1>
+          <p className="text-lg text-slate-600 dark:text-slate-300">Have a question or want to work together?</p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12">
@@ -76,11 +76,11 @@ export default function Contact() {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="bg-white p-8 rounded-2xl shadow-lg"
+            className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg"
           >
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
                   Name
                 </label>
                 <input
@@ -90,11 +90,11 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2563ab] focus:border-transparent"
+                  className="w-full px-4 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white rounded-lg focus:ring-2 focus:ring-[#2563ab] dark:focus:ring-[#60a5fa] focus:border-transparent"
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
                   Email
                 </label>
                 <input
@@ -104,11 +104,11 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2563ab] focus:border-transparent"
+                  className="w-full px-4 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white rounded-lg focus:ring-2 focus:ring-[#2563ab] dark:focus:ring-[#60a5fa] focus:border-transparent"
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
                   Message
                 </label>
                 <textarea
@@ -118,13 +118,13 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   rows={4}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2563ab] focus:border-transparent"
+                  className="w-full px-4 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white rounded-lg focus:ring-2 focus:ring-[#2563ab] dark:focus:ring-[#60a5fa] focus:border-transparent"
                 />
               </div>
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className={`w-full px-8 py-3 bg-[#2563ab] text-white rounded-lg font-medium hover:bg-[#3373bd] transition-colors ${
+                className={`w-full px-8 py-3 bg-[#2563ab] dark:bg-[#60a5fa] text-white rounded-lg font-medium hover:bg-[#3373bd] dark:hover:bg-[#3b82f6] transition-colors ${
                   isSubmitting ? 'opacity-75 cursor-not-allowed' : ''
                 }`}
               >
@@ -132,10 +132,10 @@ export default function Contact() {
               </button>
               
               {submitStatus === 'success' && (
-                <p className="text-green-600 text-center mt-4">Message sent successfully!</p>
+                <p className="text-green-600 dark:text-green-400 text-center mt-4">Message sent successfully!</p>
               )}
               {submitStatus === 'error' && (
-                <p className="text-red-600 text-center mt-4">Failed to send message. Please try again.</p>
+                <p className="text-red-600 dark:text-red-400 text-center mt-4">Failed to send message. Please try again.</p>
               )}
             </form>
           </motion.div>
@@ -148,7 +148,7 @@ export default function Contact() {
             className="space-y-8"
           >
             <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">Connect With Me</h2>
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Connect With Me</h2>
               <div className="flex space-x-4">
                 {socialLinks.map((link) => (
                   <a
@@ -156,7 +156,7 @@ export default function Contact() {
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-slate-600 hover:text-[#2563ab] transition-colors"
+                    className="text-slate-600 dark:text-slate-300 hover:text-[#2563ab] dark:hover:text-[#60a5fa] transition-colors"
                   >
                     {link.icon}
                     <span className="sr-only">{link.name}</span>
@@ -166,13 +166,13 @@ export default function Contact() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">Location</h2>
-              <p className="text-slate-600">Atlanta, GA</p>
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Location</h2>
+              <p className="text-slate-600 dark:text-slate-300">Atlanta, GA</p>
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">Email</h2>
-              <a href="mailto:slmagee24@gmail.com" className="text-[#2563ab] hover:underline">
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Email</h2>
+              <a href="mailto:slmagee24@gmail.com" className="text-[#2563ab] dark:text-[#60a5fa] hover:underline">
                 slmagee24@gmail.com
               </a>
             </div>
