@@ -1,6 +1,6 @@
 # Lee Magee's Portfolio
 
-A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS.
+Bringing data to life through analytics and creative product solutions.
 
 ## 🚀 Features
 
