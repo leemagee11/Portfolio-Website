@@ -35,10 +35,9 @@ export default function Navbar() {
 
           {/* Mobile Navigation Button */}
           <div className="md:hidden flex items-center">
-            <ThemeToggle />
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="ml-4 inline-flex items-center justify-center p-2 rounded-md text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white focus:outline-none"
             >
               <svg
                 className="h-6 w-6"
