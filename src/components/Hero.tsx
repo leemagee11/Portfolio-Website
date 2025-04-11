@@ -20,9 +20,9 @@ const Hero = () => {
               <Image
                 src="/images/profile.jpg"
                 alt="Lee Magee - Professional Profile"
-                fill
-                className="object-cover object-center"
-                sizes="(max-width: 768px) 280px"
+                width={280}
+                height={350}
+                className="object-cover"
                 priority
               />
             </div>
@@ -84,9 +84,9 @@ const Hero = () => {
             <Image
               src="/images/profile.jpg"
               alt="Lee Magee - Professional Profile"
-              fill
-              className="object-contain"
-              sizes="(max-width: 768px) 100vw, 50vw"
+              width={400}
+              height={533}
+              className="object-cover w-full h-full"
               priority
             />
           </motion.div>
