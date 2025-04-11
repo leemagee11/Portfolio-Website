@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-slate-50 to-white py-16 px-4">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-slate-50 to-white dark:from-gray-900 dark:to-gray-800 py-16 px-4">
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Image Content for mobile - shown at top */}
@@ -39,16 +39,16 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-4"
             >
-              Hi, I&apos;m <span className="text-[#2563ab]">Lee Magee</span>
+              Hi, I&apos;m <span className="text-[#2563ab] dark:text-[#60a5fa]">Lee Magee</span>
             </motion.h1>
             
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-lg sm:text-xl md:text-2xl text-slate-600 mb-8 max-w-2xl mx-auto md:mx-0"
+              className="text-lg sm:text-xl md:text-2xl text-slate-600 dark:text-slate-300 mb-8 max-w-2xl mx-auto md:mx-0"
             >
               A passionate analyst dedicated to uncovering insights that drive smarter decisions and spark meaningful change.
             </motion.p>
@@ -61,13 +61,13 @@ const Hero = () => {
             >
               <Link
                 href="/projects"
-                className="px-8 py-3 bg-[#2563ab] text-white rounded-lg font-medium hover:bg-[#3373bd] transition-colors w-full sm:w-auto text-center"
+                className="px-8 py-3 bg-[#2563ab] dark:bg-[#60a5fa] text-white rounded-lg font-medium hover:bg-[#3373bd] dark:hover:bg-[#3b82f6] transition-colors w-full sm:w-auto text-center"
               >
                 View My Work
               </Link>
               <Link
                 href="/contact"
-                className="px-8 py-3 bg-white text-[#2563ab] border border-[#2563ab] rounded-lg font-medium hover:bg-slate-50 transition-colors w-full sm:w-auto text-center"
+                className="px-8 py-3 bg-white dark:bg-gray-800 text-[#2563ab] dark:text-[#60a5fa] border border-[#2563ab] dark:border-[#60a5fa] rounded-lg font-medium hover:bg-slate-50 dark:hover:bg-gray-700 transition-colors w-full sm:w-auto text-center"
               >
                 Contact Me
               </Link>
@@ -101,7 +101,7 @@ const Hero = () => {
       >
         <div className="animate-bounce">
           <svg
-            className="w-6 h-6 text-slate-400"
+            className="w-6 h-6 text-slate-400 dark:text-slate-500"
             fill="none"
             strokeLinecap="round"
             strokeLinejoin="round"
