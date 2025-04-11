@@ -16,13 +16,13 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="relative md:hidden mx-auto mb-12 pt-8"
           >
-            <div className="w-72 h-72 relative rounded-full overflow-hidden shadow-xl">
+            <div className="w-64 h-64 relative rounded-full overflow-hidden shadow-xl">
               <Image
                 src="/images/profile.jpg"
                 alt="Lee Magee - Professional Profile"
                 fill
-                className="object-cover"
-                sizes="288px"
+                className="object-cover object-center scale-110"
+                sizes="256px"
                 priority
               />
             </div>

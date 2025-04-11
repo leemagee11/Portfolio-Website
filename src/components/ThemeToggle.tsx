@@ -9,7 +9,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors flex items-center space-x-2"
+      className="w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors flex items-center"
       aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
     >
       <motion.div
@@ -17,11 +17,11 @@ export default function ThemeToggle() {
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.2, ease: 'easeOut' }}
-        className="flex items-center"
+        className="flex items-center w-full"
       >
         {theme === 'light' ? (
           <svg
-            className="w-6 h-6 text-gray-800 dark:text-gray-200"
+            className="w-5 h-5 text-gray-600 dark:text-gray-300"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -35,7 +35,7 @@ export default function ThemeToggle() {
           </svg>
         ) : (
           <svg
-            className="w-6 h-6 text-gray-800 dark:text-gray-200"
+            className="w-5 h-5 text-gray-600 dark:text-gray-300"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -48,7 +48,7 @@ export default function ThemeToggle() {
             />
           </svg>
         )}
-        <span className="ml-2 text-sm font-medium text-gray-600 dark:text-gray-300">
+        <span className="ml-3 text-base font-medium">
           {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
         </span>
       </motion.div>
