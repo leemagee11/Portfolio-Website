@@ -6,24 +6,26 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-slate-50 to-white py-24 px-4 sm:py-16">
-      <div className="max-w-7xl mx-auto px-0 sm:px-6 lg:px-8">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-slate-50 to-white py-16 px-4">
+      <div className="max-w-7xl mx-auto w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Image Content for mobile - shown at top */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="relative w-64 h-64 md:hidden mx-auto rounded-full overflow-hidden shadow-xl mb-8"
+            className="relative md:hidden mx-auto mb-8"
           >
-            <Image
-              src="/images/profile.jpg"
-              alt="Lee Magee - Professional Profile"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 256px, 50vw"
-              priority
-            />
+            <div className="w-48 h-48 sm:w-56 sm:h-56 relative rounded-full overflow-hidden shadow-xl">
+              <Image
+                src="/images/profile.jpg"
+                alt="Lee Magee - Professional Profile"
+                fill
+                className="object-cover"
+                sizes="(max-width: 640px) 192px, 224px"
+                priority
+              />
+            </div>
           </motion.div>
 
           {/* Text Content */}
