@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lee Magee's Portfolio
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+## 🚀 Features
+
+- **Modern Stack**: Built with Next.js 14, TypeScript, and Tailwind CSS
+- **Responsive Design**: Optimized for all devices and screen sizes
+- **Dark Mode**: Elegant dark/light theme switching
+- **Smooth Animations**: Powered by Framer Motion
+- **Contact Form**: Interactive contact form with validation
+- **Performance Optimized**: Fast loading and optimal performance
+- **SEO Friendly**: Built with SEO best practices
+
+## 🛠️ Tech Stack
+
+- [Next.js](https://nextjs.org/) - React framework for production
+- [TypeScript](https://www.typescriptlang.org/) - Static type checking
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [Framer Motion](https://www.framer.com/motion/) - Animation library
+- [Vercel](https://vercel.com/) - Deployment platform
+
+## 🚀 Quick Start
 
 ```bash
+# Clone the repository
+git clone https://github.com/leemagee11/Portfolio-Website.git
+
+# Navigate to the directory
+cd portfolio
+
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📂 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+portfolio/
+├── src/
+│   ├── app/           # App router pages
+│   ├── components/    # React components
+│   └── styles/        # Global styles
+├── public/           # Static assets
+└── package.json     # Project dependencies
+```
 
-## Learn More
+## 🔗 Connect with Me
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- LinkedIn: [Lee Magee](https://www.linkedin.com/in/lee-magee/)
+- GitHub: [leemagee11](https://github.com/leemagee11)
+- Email: slmagee24@gmail.com
+- Location: Atlanta, GA
