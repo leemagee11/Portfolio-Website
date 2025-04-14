@@ -12,11 +12,29 @@ export default function About() {
           </div>
           <div className="space-y-6">
             <p className="text-slate-600 dark:text-slate-300">
-              I am a passionate analyst with a strong background in uncovering insights that drive smarter decisions and spark meaningful change. With years of experience in data analysis and visualization, I have honed my skills in delivering actionable insights to stakeholders.
+              As a QA Analyst for Chick-fil-A, I focus on the analysis, design, and testing of solutions that deliver value to our client. I have identified and reported 197 out of 233 bugs (85%) from our QA Team, mentored consultants, and contributed to the CFA Now Transformation Story.
             </p>
             <p className="text-slate-600 dark:text-slate-300">
-              My journey has been fueled by curiosity and a commitment to continuous learning. I thrive in collaborative environments where I can contribute to impactful projects and grow alongside talented professionals.
+              My previous experience includes working as a Business Analyst at Hartford Steam Boiler, where I strengthened my ability to communicate effectively with stakeholders.
             </p>
+          </div>
+
+          <div className="mt-12">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Education and Certifications</h2>
+            <ul className="list-disc list-inside text-slate-600 dark:text-slate-300">
+              <li>B.B.A. in Management Information Systems - Georgia College & State University</li>
+              <li>Certified Scrum Master (CSM)</li>
+              <li>ISTQB Certifications</li>
+              <li>AWS Cloud Practitioner Certification</li>
+              <li>Consumer Products & Retail Certification</li>
+            </ul>
+          </div>
+
+          <div className="mt-12">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Volunteer Experience</h2>
+            <ul className="list-disc list-inside text-slate-600 dark:text-slate-300">
+              <li>Coweta County Leader - Young Life (Dec 2022 - Present)</li>
+            </ul>
           </div>
         </div>
       </div>
