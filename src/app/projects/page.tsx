@@ -12,7 +12,7 @@ export default function Projects() {
           </div>
           <div className="grid gap-8 md:grid-cols-2">
             <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg">
-              <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Chick-fil-A Now</h2>
+              <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Chick-fil-A</h2>
               <p className="text-slate-600 dark:text-slate-300 mb-4">
                 As a QA Analyst for Chick-fil-A, I prioritize quality in app releases to guarantee client satisfaction and deliver great results. I work closely with business partners to understand expected app behavior and expectations, enabling effective communication with developers to resolve defects quickly.
               </p>
@@ -24,7 +24,7 @@ export default function Projects() {
               </p>
             </div>
             <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg">
-              <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Hartford Steam Boiler (HSB)</h2>
+              <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Hartford Steam Boiler</h2>
               <p className="text-slate-600 dark:text-slate-300 mb-4">
                 As a Business Analyst, I drafted weekly status reports and project plans to track accomplishments, upcoming activities, and issues, ensuring stakeholders were well-informed.
               </p>
