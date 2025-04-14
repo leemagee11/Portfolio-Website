@@ -12,10 +12,10 @@ export default function About() {
           </div>
           <div className="space-y-6">
             <p className="text-slate-600 dark:text-slate-300">
-            A passionate, well-rounded Analyst committed to delivering high-quality solutions through meticulous analysis, strategic thinking, and collaborative problem-solving. With experience supporting enterprise applications and data-driven initiatives, I bring a unique blend of technical insight and business acumen to any team. Whether it's enhancing mobile app quality or leading system transformation, I thrive on turning complex challenges into meaningful results.
+              My previous experience includes working as a Business Analyst at Hartford Steam Boiler, where I strengthened my ability to communicate effectively with stakeholders.
             </p>
             <p className="text-slate-600 dark:text-slate-300">
-              My previous experience includes working as a Business Analyst at Hartford Steam Boiler, where I strengthened my ability to communicate effectively with stakeholders.
+              A passionate, well-rounded Analyst committed to delivering high-quality solutions through meticulous analysis, strategic thinking, and collaborative problem-solving. With experience supporting enterprise applications and data-driven initiatives, I bring a unique blend of technical insight and business acumen to any team. Whether it&apos;s enhancing mobile app quality or leading system transformation, I thrive on turning complex challenges into meaningful results.
             </p>
           </div>
 
