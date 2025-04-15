@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { useState } from 'react';
 
 interface ProjectCardProps {
   id: string;
@@ -13,6 +12,8 @@ interface ProjectCardProps {
   challenges: string[];
   liveUrl: string;
   githubUrl: string;
+  isExpanded: boolean; // Added prop for expansion state
+  toggleCard: () => void; // Added prop for toggle function
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -25,13 +26,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   challenges,
   liveUrl,
   githubUrl,
+  isExpanded,
+  toggleCard,
 }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
-
-  const toggleCard = () => {
-    setIsExpanded((prev) => !prev);
-  };
-
   const backgroundColor = id === '1' ? 'bg-[#DD0031]' : id === '2' ? 'bg-[#175788]' : 'bg-gradient-to-r from-blue-500 to-purple-600';
 
   const animationVariants = {

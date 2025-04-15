@@ -29,6 +29,8 @@ export default function Projects() {
               <ProjectCard
                 key={project.id}
                 {...project}
+                isExpanded={!!expandedCards[project.id]}
+                toggleCard={() => toggleCard(project.id)}
               />
             ))}
           </div>
