@@ -5,18 +5,16 @@ import ProjectCard from '@/components/ProjectCard';
 import projectsData from './projectsData';
 import Navbar from '@/components/Navbar';
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const [expandedCards, setExpandedCards] = useState<{ [key: string]: boolean }>({});
-
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const toggleCard = (cardId: string) => {
-  setExpandedCards((prev) => ({
-    ...prev,
-    [cardId]: !prev[cardId],
-  }));
-};
-
 export default function Projects() {
+  const [expandedCards, setExpandedCards] = useState<{ [key: string]: boolean }>({});
+
+  const toggleCard = (cardId: string) => {
+    setExpandedCards((prev) => ({
+      ...prev,
+      [cardId]: !prev[cardId],
+    }));
+  };
+
   return (
     <>
       <Navbar />
