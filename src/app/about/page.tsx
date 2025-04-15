@@ -13,11 +13,11 @@ export default function About() {
             <p className="text-lg text-slate-600 dark:text-slate-300">Learn more about my journey and experiences.</p>
           </div>
           <div className="space-y-6">
-            <p className="text-slate-600 dark:text-slate-300">
-              I am a passionate analyst with a strong background in uncovering insights that drive smarter decisions and spark meaningful change. With years of experience in data analysis and visualization, I have honed my skills in delivering actionable insights to stakeholders.
+            <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+              I’m a dedicated QA Analyst and Business Analyst with a passion for delivering high-quality software solutions. At Chick-fil-A, I’ve taken a lead role in ensuring smooth mobile app releases, mentoring teammates, and driving improvements through bug triage meetings and API testing with tools like Postman and Datadog. I also bring experience in business analysis from my time at Hartford Steam Boiler, where I supported data migration projects and helped modernize legacy systems through ETL and STM documentation.
             </p>
-            <p className="text-slate-600 dark:text-slate-300">
-              My journey has been fueled by curiosity and a commitment to continuous learning. I thrive in collaborative environments where I can contribute to impactful projects and grow alongside talented professionals.
+            <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+              My approach combines strong technical know-how with collaborative problem-solving. Whether resolving defects under pressure or documenting complex workflows, I focus on efficiency, clarity, and communication.
             </p>
           </div>
         </div>
