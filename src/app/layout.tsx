@@ -7,8 +7,18 @@ import { ThemeProvider } from '@/components/ThemeProvider'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Lee Magee - Portfolio",
-  description: "A passionate analyst dedicated to uncovering insights that drive smarter decisions and spark meaningful change.",
+  title: "Lee Magee – Quality & Product Analyst",
+  description: "Quality, Product, and Business Analyst · Senior Consultant at Sogeti (Chick-fil-A). Agile QA, requirements gathering, and process improvement. Atlanta, GA.",
+  openGraph: {
+    title: "Lee Magee – Quality & Product Analyst",
+    description: "Quality, Product, and Business Analyst · Senior Consultant at Sogeti (Chick-fil-A). Agile QA, requirements gathering, and process improvement.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lee Magee – Quality & Product Analyst",
+    description: "Quality, Product, and Business Analyst · Senior Consultant at Sogeti (Chick-fil-A). Agile QA, requirements gathering, and process improvement.",
+  },
 };
 
 export default function RootLayout({
